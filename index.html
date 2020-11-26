@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css"
         integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w=="
         crossorigin="anonymous" />
@@ -57,24 +58,24 @@
 
     .s3 {
         font-family: "High tower text";
-        font-size: 24pt;
+        font-size: 14pt;
         background-color: rgb(0, 159, 227);
-        color: white;
+        text-align: center;
     }
 
     .s4 {
         font-family: "High tower text";
-        font-size: 24pt;
+        font-size: 14pt;
         background-color: rgb(0, 159, 227);
-        color: white;
+        text-align: center;
     }
 
-    .projectimage img{
+    .projectimage img {
         height: auto;
-        width: max(14vw, 75px);
+        width: max(13vw, 75px);
     }
 
-    .projecttext p{
+    .projecttext p {
         text-align: justify;
     }
 
@@ -89,11 +90,13 @@
     .container .box {
         position: relative;
         background: #fff;
-        padding: 10px 20px 20px;
+        padding: 10px 10px 10px;
         text-align: center;
         overflow: hidden;
         border-radius: 20px;
         font-size: min(4vw, 14pt);
+        height: 40%;
+        width: auto;
     }
 
     .container .box:nth-child(1) {
@@ -169,6 +172,47 @@
         padding-right: 5%;
         font-size: min(4vw, 16pt);
     }
+
+    .card-body p{
+        text-align: justify;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: min(4vw, 16pt);
+    }
+
+    .card {
+        width: auto;
+        border-radius: 25px;
+    }
+
+    .card-img-top {
+        height: min(25vw, 120px);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .card-img-top img {
+        border-radius: 25px;
+        width: 100%;
+    }
+
+    .projecttitle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .projecttitle h2 {
+        position: relative;
+        padding: 0;
+        margin: 0;
+        font-size: min(7vw,36pt);
+        color: #fff;
+        z-index: 1;
+        /* opacity: 0.4; */
+    }
 </style>
 
 <body>
@@ -195,22 +239,24 @@
                 <h3>Hello there, thanks for the visit ! </h3>
                 <p>An IT enthusiast here, in love with programming and fascinated by how our everyday lives are
                     constantly improving with the use of mobile applications, websites and the Internet Of Things.
-                    Having a fondness for learning new things every day, i take joy in my career as daily challenges
+                    Having a fondness for learning new things every day, I take joy in my career as daily challenges
                     are not just work but passion as well.Thankful for every role as it adds skills to my toolbelt and
-                    widens my skillset, scroll down to see some of the projects i have been involved in.
+                    widens my skillset, scroll down to see some of the projects I've been involved in.
                 </p>
             </div>
 
         </div>
         <div class="section s3">
             <div class="container">
-                <div class="box">
-                    <div class="projectimage">
-                        <img src="/static/images/Smartcity_1.png" >
+                <div class="card">
+                    <div class="card-img-top" src="/static/images/SmartCity.jpg" alt="Card image cap">
+                        <img src="/static/images/SmartCity.jpg" alt="Card smartcity cap">
+                        <div class="projecttitle">
+                            <h2>Smart City Solutions (POC)</h2>
+                        </div>
                     </div>
-                    <div class="projecttext">
-                        <h3>Smart City PoC</h3>
-                        <p>Taking the role as a technical manager, i worked as part
+                    <div class="card-body">
+                        <p class="card-text">Taking the role as a technical manager, i worked as part
                             of a remote team of IoT professionals coordinating with
                             local subcontractors to bring about smart city solution
                             proof of concepts to two major cities inthe country, one
@@ -218,48 +264,51 @@
                         </p>
                     </div>
                 </div>
-                <div class="box">
-                    <div class="projectimage">
-                        <img src="/static/images/SIMDigitalization_1.png" >
+                <div class="card">
+                    <div class="card-img-top" src="/static/images/SmartCity.jpg" alt="Card image cap">
+                        <img src="/static/images/SIMDigitalization.jpg" alt="Card smartcity cap">
+                        <div class="projecttitle">
+                            <h2>SIM Digitalization (OCR)</h2>
+                        </div>
                     </div>
-                    <div class="projecttext">
-                        <h3>SIM Digitalization (OCR)</h3>
-                        <p>The client being a well reknowned top telecom company
+                    <div class="card-body">
+                        <p class="card-text">The client being a well reknowned top telecom company
                             in the country, i worked as the sole developer responsible
                             for building and scaling a web application that acts as an
                             interface between the customer's SIMs database and the
-                            Optical Character Recognition (OCR) service.
-                        </p>
+                            Optical Character Recognition (OCR) service.</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="section s4">
             <div class="container">
-                <div class="box">
-                    <div class="projectimage">
-                        <img src="/static/images/adplatapp.png" >
+                <div class="card">
+                    <div class="card-img-top" src="/static/images/SmartCity.jpg" alt="Card image cap">
+                        <img src="/static/images/Adsmodo.png" alt="Card smartcity cap">
+                        <div class="projecttitle">
+                            <h2>Smart Ad Platform</h2>
+                        </div>
                     </div>
-                    <div class="projecttext">
-                        <h3>Smart Ad Platform</h3>
-                        <p>Coordinating as a local team, directed by a client based in the U.S,
-                           i worked as the sole iOS developer responsible for building an mobile app
-                           from scratch for a smart ad management platform which also consists of e-commerce
-                           and CRM features.
-                        </p>
+                    <div class="card-body">
+                        <p class="card-text">Coordinating as a local team, directed by a client based in the U.S,
+                            i worked as the sole iOS developer responsible for building an mobile app
+                            from scratch for a smart ad management platform which also consists of e-commerce
+                            and CRM features.</p>
                     </div>
                 </div>
-                <div class="box">
-                    <div class="projectimage">
-                        <img src="/static/images/bi.png" >
+                <div class="card">
+                    <div class="card-img-top" src="/static/images/SmartCity.jpg" alt="Card image cap">
+                        <img src="/static/images/B_I.jpg" alt="Card smartcity cap">
+                        <div class="projecttitle">
+                            <h2>B.I reporting</h2>
+                        </div>
                     </div>
-                    <div class="projecttext">
-                        <h3>B.I reporting dashboard</h3>
-                        <p>Working out of a major holdings corporation, i was part of the data team
+                    <div class="card-body">
+                        <p class="card-text">Working out of a major holdings corporation, i was part of the data team
                             that operates on both scheduled tasks and ad hoc requests to provide
                             timely and effective business intelligence reports to various subsidiary management
-                            and C-Level executives.
-                        </p>
+                            and C-Level executives.</p>
                     </div>
                 </div>
             </div>

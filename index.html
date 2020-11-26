@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css"
         integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w=="
         crossorigin="anonymous" />
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css">
     <title>Christopher Jude</title>
 
 </head>
@@ -212,8 +213,25 @@
         font-size: min(7vw,36pt);
         color: #fff;
         z-index: 1;
-        background-color: rgba(0,0,0,.5);
+        /* background-color: rgba(0,0,0,.5); */
         /* opacity: 0.4; */
+    }
+
+    .projectoverlay{
+        position: absolute;
+        bottom: 0;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5); /* Black see-through */
+        color: #f1f1f1;
+        width: 100%;
+        opacity:0.8;
+        color: black;
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+        height: 100%;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
     }
 </style>
 
@@ -253,6 +271,7 @@
                 <div class="card">
                     <div class="card-img-top" src="/static/images/SmartCity.jpg" alt="Card image cap">
                         <img src="/static/images/SmartCity.jpg" alt="Card smartcity cap">
+                        <div class="projectoverlay"></div>
                         <div class="projecttitle">
                             <h2>Smart City Solutions (POC)</h2>
                         </div>
@@ -269,6 +288,7 @@
                 <div class="card">
                     <div class="card-img-top" src="/static/images/SmartCity.jpg" alt="Card image cap">
                         <img src="/static/images/SIMDigitalization.jpg" alt="Card smartcity cap">
+                        <div class="projectoverlay"></div>
                         <div class="projecttitle">
                             <h2>SIM Digitalization (OCR)</h2>
                         </div>
@@ -288,6 +308,7 @@
                 <div class="card">
                     <div class="card-img-top" src="/static/images/SmartCity.jpg" alt="Card image cap">
                         <img src="/static/images/Adsmodo.png" alt="Card smartcity cap">
+                        <div class="projectoverlay"></div>
                         <div class="projecttitle">
                             <h2>Smart Ad Platform</h2>
                         </div>
@@ -302,6 +323,7 @@
                 <div class="card">
                     <div class="card-img-top" src="/static/images/SmartCity.jpg" alt="Card image cap">
                         <img src="/static/images/B_I.jpg" alt="Card smartcity cap">
+                        <div class="projectoverlay"></div>
                         <div class="projecttitle">
                             <h2>B.I reporting</h2>
                         </div>
